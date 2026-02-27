@@ -8,9 +8,8 @@ void printHull(Point hull[], int h) {
     }
     printf("\n");
 }
-
 void testBasic() {
-    printf("\n--- Test Basic ---\n");
+    printf("\nTest Basic\n");
     Point points[] = {{0, 0}, {1, 1}, {2, 2}, {1, 3}, {0, 2}, {2, 0}};
     Point hull[10];
     int h = convexHull(points, 6, hull);
@@ -18,9 +17,8 @@ void testBasic() {
     printHull(hull, h);
     assert(h == 5);
 }
-
 void testNotEnoughPoints() {
-    printf("\n--- Test Not Enough Points \n");
+    printf("\nTest Not Enough Points\n");
     Point points[] = {{0, 0}, {1, 1}};
     Point hull[10];
     int h = convexHull(points, 2, hull);
@@ -28,7 +26,6 @@ void testNotEnoughPoints() {
     printHull(hull, h);
     assert(h == 2);
 }
-
 void testSinglePoint() {
     printf("\n Test Single Point \n");
     Point points[] = {{1, 1}};
@@ -38,7 +35,6 @@ void testSinglePoint() {
     printHull(hull, h);
     assert(h == 1);
 }
-
 void testCollinear() {
     printf("\n Test Collinear \n");
     Point points[] = {{0, 0}, {1, 1}, {2, 2}, {3, 3}};
@@ -48,7 +44,6 @@ void testCollinear() {
     printHull(hull, h);
     assert(h == 2);
 }
-
 void testCollinearWithExtra() {
     printf("\n Test Collinear with Extra \n");
     Point points[] = {{0, 0}, {1, 1}, {2, 2}, {3, 3}, {0, 3}};
@@ -58,7 +53,6 @@ void testCollinearWithExtra() {
     printHull(hull, h);
     assert(h >= 3);
 }
-
 void testRandom() {
     printf("\nTest Random Points \n");
     Point points[] = {{0, 0}, {2, 0}, {3, 1}, {3, 3}, {2, 3}, {1, 2}};
@@ -70,7 +64,6 @@ void testRandom() {
 }
 void run_all_tests() {
     printf("Running Convex Hull Tests\n");
-    printf("=========================\n");
     testBasic();
     testNotEnoughPoints();
     testSinglePoint();
