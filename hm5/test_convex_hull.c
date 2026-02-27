@@ -10,7 +10,7 @@ void printHull(Point hull[], int h) {
 }
 
 void testBasic() {
-    printf("\n Test Basic \n");
+    printf("\n--- Test Basic ---\n");
     Point points[] = {{0, 0}, {1, 1}, {2, 2}, {1, 3}, {0, 2}, {2, 0}};
     Point hull[10];
     int h = convexHull(points, 6, hull);
@@ -20,7 +20,7 @@ void testBasic() {
 }
 
 void testNotEnoughPoints() {
-    printf("\n Test Not Enough Points \n");
+    printf("\n--- Test Not Enough Points \n");
     Point points[] = {{0, 0}, {1, 1}};
     Point hull[10];
     int h = convexHull(points, 2, hull);
