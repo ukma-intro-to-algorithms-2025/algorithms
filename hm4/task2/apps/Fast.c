@@ -79,11 +79,7 @@ void find_collinear_fast(PointPtr* points, int n) {
         while (start < slope_count) {
             int end = start + 1;  
             double current_slope = slopes[start].slope;
-            
-            // РОЗШИРЮЄМО ГРУПУ - додаємо всі точки з таким самим нахилом
-            // Умови:
-            // 1. end < slope_count - не вийшли за межі масиву
-            // 2. нахил поточного елемента майже дорівнює current_slope
+
             while (end < slope_count && 
                    fabs(slopes[end].slope - current_slope) < 1e-9) {
                 end++; 
