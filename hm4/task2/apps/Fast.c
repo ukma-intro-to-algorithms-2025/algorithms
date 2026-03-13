@@ -14,10 +14,10 @@ int compare_point_with_slope(const void* a, const void* b) {  // порівня�
     const PointWithSlope* pa = (const PointWithSlope*)a; 
     const PointWithSlope* pb = (const PointWithSlope*)b;  
     
-    if (fabs(pa->slope - pb->slope) < 1e-9) {  // Якщо нахили майже рівні (з точністю до 1e-9)
+    if (fabs(pa->slope - pb->slope) < 1e-9) {  
         return compare_points(&pa->point, &pb->point);  // Порівняти точки за координатами
     }                                             
-    if (pa->slope < pb->slope) return -1;          // Якщо нахил a менше нахилу b, повернути -1
+    if (pa->slope < pb->slope) return -1;     
     return 1;                                
 }                                                
 
