@@ -4,18 +4,15 @@ CFLAGS = -Wall -Wextra -O2 -I./include
 CXXFLAGS = -Wall -Wextra -O2 -I./include -lgtest -lgtest_main -pthread
 LDFLAGS = -lm
 
-# Source files
 POINT_SRC = src/point.c
 BRUTE_SRC = apps/Brute.c
 FAST_SRC = apps/Fast.c
 TEST_SRC = tests/point_test.cpp
 
-# Object files
 POINT_OBJ = src/point.o
 BRUTE_OBJ = apps/Brute.o
 FAST_OBJ = apps/Fast.o
 
-# Executables
 BRUTE_EXEC = brute
 FAST_EXEC = fast
 TEST_EXEC = point_test
