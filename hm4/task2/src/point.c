@@ -18,14 +18,14 @@ void destroy_point(PointPtr p) {
 }                                  
 
 int compare_points(const void* a, const void* b) {  // порівняння точок
-    const Point* pa = (const Point*)a;   // Приведення типу a до вказівника на Point
-    const Point* pb = (const Point*)b;   // Приведення типу b до вказівника на Point
+    const Point* pa = (const Point*)a; 
+    const Point* pb = (const Point*)b; 
     
-    if (pa->y < pb->y) return -1;        // Якщо y першої точки менше, повернути -1
-    if (pa->y > pb->y) return 1;         // Якщо y першої точки більше, повернути 1
-    if (pa->x < pb->x) return -1;        // Якщо x першої точки менше (при рівних y), повернути -1
-    if (pa->x > pb->x) return 1;         // Якщо x першої точки більше (при рівних y), повернути 1
-    return 0;                             // Якщо точки повністю рівні, повернути 0
+    if (pa->y < pb->y) return -1;   
+    if (pa->y > pb->y) return 1;       
+    if (pa->x < pb->x) return -1;  
+    if (pa->x > pb->x) return 1;      
+    return 0;                         
 }                                
 
 double slope_to(PointPtr p1, PointPtr p2) {  // Визначення функції обчислення нахилу
