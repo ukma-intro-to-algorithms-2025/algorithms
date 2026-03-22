@@ -7,7 +7,7 @@
 #include <string.h>
 
 void test_BSTFloor() {
-    printf("\n=== Testing BSTFloor ===\n");
+    printf("\n Testing BSTFloor n");
     
     {
         NodePtr head = NULL;
@@ -142,7 +142,7 @@ void test_BSTFloor() {
 }
 
 void test_BSTCeiling() {
-    printf("\n=== Testing BSTCeiling ===\n");
+    printf("\nTesting BSTCeiling \n");
     
     {
         NodePtr head = NULL;
@@ -179,7 +179,7 @@ void test_BSTCeiling() {
 }
 
 void test_BSTRank() {
-    printf("\n=== Testing BSTRank ===\n");
+    printf("\nTesting BSTRank\n");
     
     {
         NodePtr head = NULL;
@@ -220,7 +220,7 @@ void test_BSTRank() {
 }
 
 void test_BSTMinMax() {
-    printf("\n=== Testing BSTMin and BSTMax ===\n");
+    printf("\n Testing BSTMin and BSTMax \n");
     
     {
         NodePtr head = NULL;
@@ -255,7 +255,7 @@ void test_BSTMinMax() {
 }
 
 void test_BSTDeleteMin() {
-    printf("\n=== Testing BSTDeleteMin ===\n");
+    printf("\n Testing BSTDeleteMin\n");
     
     {
         NodePtr head = NULL;
@@ -327,7 +327,7 @@ void test_BSTDeleteMin() {
 }
 
 void test_BSTDeleteMax() {
-    printf("\n=== Testing BSTDeleteMax ===\n");
+    printf("\n Testing BSTDeleteMax \n");
     
     {
         NodePtr head = NULL;
@@ -394,10 +394,7 @@ int main() {
     test_BSTMinMax();
     test_BSTDeleteMin();
     test_BSTDeleteMax();
-    
-    printf("\n========================================\n");
     printf("All tests passed successfully!\n");
-    printf("========================================\n");
 
     return 0;
 }
