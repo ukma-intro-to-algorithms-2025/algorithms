@@ -1,5 +1,3 @@
-# Простий Makefile для структури з папками
-
 CC = gcc
 CXX = g++
 CFLAGS = -g -Wall -I./include
