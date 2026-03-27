@@ -29,10 +29,9 @@ Key BSTMax(NodePtr);
 void BSTPrint(const NodePtr);
 void BSTPrintReverse(const NodePtr);
 
-// Validation
 int isBST(NodePtr head);
 
-// Cleanup
+
 void BSTDestroy(NodePtr);
 
 #endif
