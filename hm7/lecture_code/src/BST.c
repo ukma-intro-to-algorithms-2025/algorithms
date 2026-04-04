@@ -227,13 +227,13 @@ void BSTPrint(NodePtr head) {
     BSTPrint(head->right);
 }
 
+//hm7 
 int calculateHeight(NodePtr node) {
     if (node == NULL) return 0;
     int leftHeight = calculateHeight(node->left);
     int rightHeight = calculateHeight(node->right);
     return 1 + (leftHeight > rightHeight ? leftHeight : rightHeight);
 }
-
 
 NodePtr createMinHeightBST(Key arr[], int start, int end) {
     if (start > end) {
