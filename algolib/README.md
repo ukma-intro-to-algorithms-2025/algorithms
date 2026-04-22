@@ -21,6 +21,7 @@
 ## Project Structure
 
 algolib/
+
 ├── include/ 
 
 ├── src/ 
