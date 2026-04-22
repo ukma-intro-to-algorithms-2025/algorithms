@@ -37,6 +37,7 @@ algolib/
 
 make       
 make clean 
+
 make demo   
 make test     
 
