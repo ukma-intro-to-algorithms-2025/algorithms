@@ -21,17 +21,23 @@
 ## Project Structure
 
 algolib/
-├── include/ Public header files (.h)
-├── src/ Source files (.c)
-├── demo/ Example programs
-├── tests/
+├── include/ 
+
+├── src/ 
+
+├── demo/ 
+
+├── tests/ 
+
 ├── Makefile 
+
 └── README.md 
 
 ## Compilation
 
 make       
 make clean 
+
 make demo   
 make test     
 
